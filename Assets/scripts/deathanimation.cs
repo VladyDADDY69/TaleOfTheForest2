@@ -27,6 +27,7 @@ public class deathanimation : MonoBehaviour
         {
             Die();
         }
+
         if (hp.health == 0)
         {
             Die();
