@@ -258,8 +258,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013981289, y: -0.081587195}
-  m_Size: {x: 0.23505792, y: 0.10265474}
+  m_Offset: {x: 0.0068307486, y: -0.09472494}
+  m_Size: {x: 0.24935944, y: 0.12893029}
   m_Direction: 1
 --- !u!212 &277316079
 SpriteRenderer:
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   playerTransform: {fileID: 1504962937}
   isChasing: 0
   chaseDistance: 2
-  moveSpeed: 0.5
+  moveSpeed: 0.28
 --- !u!114 &620254575
 MonoBehaviour:
   m_ObjectHideFlags: 0

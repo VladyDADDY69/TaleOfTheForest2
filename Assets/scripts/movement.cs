@@ -31,8 +31,7 @@ public class movement : MonoBehaviour
 
     // Update is called once per frame 
 
-    private void Update()
-
+    void FixedUpdate()
     {
         dirx = Input.GetAxisRaw("Horizontal");
         if (KBCounter <= 0)
