@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Trap
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: skies
+    uniqueID: 2737848883
+    locked: 0
+  - name: furthest mountains
+    uniqueID: 2756436049
+    locked: 0
+  - name: blue-ish far mountains
+    uniqueID: 3522137711
+    locked: 0
+  - name: more detailed far mountains
+    uniqueID: 1710359885
+    locked: 0
+  - name: middle trees
+    uniqueID: 2955448357
+    locked: 0
+  - name: close bg trees
+    uniqueID: 1729714231
+    locked: 0
+  - name: bg grass
+    uniqueID: 326746309
+    locked: 0
+  - name: tiles
+    uniqueID: 1870076349
+    locked: 0
+  - name: ground
+    uniqueID: 2272242081
+    locked: 0
+  - name: fg grass
+    uniqueID: 3450422133
+    locked: 0
+  - name: fg trees
+    uniqueID: 1674001397
+    locked: 0
