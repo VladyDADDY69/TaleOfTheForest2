@@ -25,7 +25,6 @@ public class movement : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<CapsuleCollider2D>();
-       
 
     }
 
@@ -33,7 +32,7 @@ public class movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        dirx = Input.GetAxisRaw("Horizontal");
+        
         if (KBCounter <= 0)
         {
             rb.velocity = new Vector2(dirx, rb.velocity.y);
@@ -50,11 +49,11 @@ public class movement : MonoBehaviour
             }
             KBCounter -= Time.deltaTime;
         }
-
         UpdateAnimationUpdate();
     }
     private void Update()
     {
+        dirx = Input.GetAxisRaw("Horizontal");
         if (Input.GetButtonDown("Jump") && GC())
         {
             rb.velocity = new Vector2(rb.velocity.x, 3.5f);
