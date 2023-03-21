@@ -49,6 +49,7 @@ public class movement : MonoBehaviour
             }
             KBCounter -= Time.deltaTime;
         }
+        
         UpdateAnimationUpdate();
     }
     private void Update()

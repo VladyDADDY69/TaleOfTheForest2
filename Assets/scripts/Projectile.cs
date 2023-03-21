@@ -20,10 +20,20 @@ public class Projectile : MonoBehaviour
     {
         projectileCount -= Time.deltaTime;
         if (projectileCount <= 0)
+        {
             Destroy(gameObject);
+        }
     }
     private void FixedUpdate()
     {
         projectileRb.velocity = new Vector2(speed, projectileRb.velocity.y);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "WeakPoint")
+        {
+            Destroy(collision.gameObject);
+        }
+        Destroy(gameObject);
     }
 }
