@@ -15,7 +15,9 @@ public class movement : MonoBehaviour
     public float KBTotalTime;
 
     public bool KnockFromRight;
-
+    public bool flippedLeft;
+    public bool facingRight;
+    public float input;
     [SerializeField] private LayerMask jumpableGround;
     // Start is called before the first frame update 
 
@@ -49,7 +51,6 @@ public class movement : MonoBehaviour
             }
             KBCounter -= Time.deltaTime;
         }
-        
         UpdateAnimationUpdate();
     }
     private void Update()
@@ -76,6 +77,19 @@ public class movement : MonoBehaviour
 
     }
 
+    void flip(bool facingRight)
+    {
+        if(flippedLeft && facingRight)
+        {
+            transform.Rotate(0, -180, 0);
+            flippedLeft = false;
+        }
+        if(!flippedLeft && !facingRight)
+        {
+            transform.Rotate(0, -180, 0);
+            flippedLeft = true;
+        }
+    }
     private bool GC()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
