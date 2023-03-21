@@ -48,18 +48,18 @@ public class movement : MonoBehaviour
             {
                 rb.velocity = new Vector2(KBForce, KBForce);
             }
-
             KBCounter -= Time.deltaTime;
         }
 
+        UpdateAnimationUpdate();
+    }
+    private void Update()
+    {
         if (Input.GetButtonDown("Jump") && GC())
         {
             rb.velocity = new Vector2(rb.velocity.x, 3.5f);
 
         }
-
-        UpdateAnimationUpdate();
-
     }
     private void UpdateAnimationUpdate()
     {
