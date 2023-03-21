@@ -9,10 +9,13 @@ public class MonsterMovement : MonoBehaviour
     public float chaseDistance;
     public float moveSpeed;
 
+    public int mvsp = 1;
+    private MonsterDamage hop;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        hop = GetComponent<MonsterDamage>();
     }
 
     // Update is called once per frame
@@ -20,15 +23,19 @@ public class MonsterMovement : MonoBehaviour
     {
         if (isChasing)
         {
+            if(hop.hpPlayer <= 0)
+            {
+                mvsp = 0;
+            }
             if (transform.position.x > playerTransform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);
-                transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+                transform.position += Vector3.left * moveSpeed * Time.deltaTime * mvsp;
             }
             if (transform.position.x < playerTransform.position.x)
             {
                 transform.localScale = new Vector3(-1, 1, 1);
-                transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+                transform.position += Vector3.right * moveSpeed * Time.deltaTime*mvsp;
             }
         }
         else

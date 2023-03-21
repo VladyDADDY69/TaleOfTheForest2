@@ -7,6 +7,7 @@ public class MonsterDamage : MonoBehaviour
     public int damage;
     public PlayerHealth playerHealth;
     public movement playerMovement;
+    public int hpPlayer;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,6 +23,7 @@ public class MonsterDamage : MonoBehaviour
                 playerMovement.KnockFromRight = false;
             }
             playerHealth.TakeDamage(damage);
+            hpPlayer = hpPlayer - damage;
         }
     }
 }
