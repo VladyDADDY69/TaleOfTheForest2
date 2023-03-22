@@ -6,9 +6,12 @@ public class Projectile : MonoBehaviour
 {
     public Rigidbody2D projectileRb;
     public float speed;
-
+    public int dmg = 5;
     public float projectileLife;
     public float projectileCount;
+    public int hpMonster;
+    public MonsterHealth monsterHealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +33,14 @@ public class Projectile : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "WeakPoint")
+        if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "WeakPoint")
+        {
+            monsterHealth.TakeDmg(dmg);
+            hpMonster = hpMonster - dmg;
         }
         Destroy(gameObject);
     }
