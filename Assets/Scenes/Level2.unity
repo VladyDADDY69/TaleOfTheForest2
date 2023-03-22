@@ -1741,22 +1741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f659dc209e5b8b47ad64ba89ae64130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1649720104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166601390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00301daaf31a7334ea35418d1e17be86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 6868797605618300472, guid: f9b20d108962bcb409a228a9c68bb94e, type: 3}
-  launchPoint: {fileID: 2142858861}
-  shootTime: 0.5
-  shootCounter: 0
 --- !u!1 &1864057467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8671261463867019432, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
