@@ -10,13 +10,13 @@ public class movement : MonoBehaviour
     private SpriteRenderer sprite;
     private Rigidbody2D rb;
     private float dirx = 0f;
-    
     public float KBForce;
     public float KBCounter;
     public float KBTotalTime;
 
     public bool KnockFromRight;
-
+    
+    
     [SerializeField] private LayerMask jumpableGround;
     // Start is called before the first frame update 
 
@@ -77,6 +77,8 @@ public class movement : MonoBehaviour
 
     }
 
+    
+    
     private bool GC()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
