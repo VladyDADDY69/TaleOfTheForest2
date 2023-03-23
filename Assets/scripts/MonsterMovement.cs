@@ -8,7 +8,7 @@ public class MonsterMovement : MonoBehaviour
     public bool isChasing;
     public float chaseDistance;
     public float moveSpeed;
-
+    
     public int mvsp = 1;
     private MonsterDamage hop;
 
@@ -16,8 +16,12 @@ public class MonsterMovement : MonoBehaviour
     void Start()
     {
         hop = GetComponent<MonsterDamage>();
+        
     }
-
+    void FixedUpdate()
+    {
+       
+    }
     // Update is called once per frame
     void Update()
     {

@@ -1042,6 +1042,8 @@ GameObject:
   - component: {fileID: 620254578}
   - component: {fileID: 620254580}
   - component: {fileID: 620254581}
+  - component: {fileID: 620254582}
+  - component: {fileID: 620254583}
   m_Layer: 8
   m_Name: mole
   m_TagString: WeakPoint
@@ -1211,6 +1213,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mxh: 100
+--- !u!114 &620254582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620254568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e25cc3207b6f546ba22e881e082250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 10
+  mhp: 0
+--- !u!114 &620254583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620254568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27db0faac2602c7418d2aed76cf13b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &683513645
 PrefabInstance:
   m_ObjectHideFlags: 0
