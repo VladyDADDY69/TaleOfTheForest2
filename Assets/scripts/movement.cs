@@ -14,6 +14,8 @@ public class movement : MonoBehaviour
     public float KBCounter;
     public float KBTotalTime;
 
+    
+
     public bool KnockFromRight;
     
     
@@ -22,7 +24,7 @@ public class movement : MonoBehaviour
 
     private void Start()
     {
-
+       
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<CapsuleCollider2D>();
@@ -55,7 +57,9 @@ public class movement : MonoBehaviour
     }
     private void Update()
     {
-        dirx = Input.GetAxisRaw("Horizontal");
+       
+            dirx = Input.GetAxisRaw("Horizontal");
+        
         if (Input.GetButtonDown("Jump") && GC())
         {
             rb.velocity = new Vector2(rb.velocity.x, 3.5f);

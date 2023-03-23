@@ -10,7 +10,7 @@ public class NPC : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
     private int index = 0;
-
+    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
 
@@ -25,21 +25,22 @@ public class NPC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
-            if (!dialoguePanel.activeInHierarchy)
+            if (dialoguePanel.activeInHierarchy)
+            {
+                RemoveText();
+            }
+            else 
             {
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
             }
-            else if (dialogueText.text == dialogue[index])
-            {
-                NextLine();
-            }
 
         }
-        if (Input.GetKeyDown(KeyCode.Q) && dialoguePanel.activeInHierarchy)
+        if(dialogueText.text==dialogue[index])
         {
-            RemoveText();
+            contButton.SetActive(true);
         }
+        
     }
 
     public void RemoveText()
@@ -51,7 +52,7 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
+        foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
@@ -60,6 +61,7 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
+        contButton.SetActive(false);
         if (index < dialogue.Length - 1)
         {
             index++;
@@ -86,6 +88,7 @@ public class NPC : MonoBehaviour
         {
             playerIsClose = false;
             RemoveText();
+            
         }
     }
 }

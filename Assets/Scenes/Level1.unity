@@ -1037,10 +1037,9 @@ MonoBehaviour:
   dialogueText: {fileID: 267199077}
   dialogue:
   - Hello!
-  - Bol the builder
-  - As you were sitting there thinking of your shrexy next door neighbor sagi senpai.
-    He called you."Hello?" "Oh hai there laddy"the tone of his thicc Scottish accent
-    turned you on
+  - You won't leave this place...
+  - EVER!
+  contButton: {fileID: 1867205300}
   wordSpeed: 0.06
   playerIsClose: 0
 --- !u!61 &469961430
@@ -1056,7 +1055,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0025286674, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1067,7 +1066,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.8}
+  m_Size: {x: 1.0455122, y: 1.8}
   m_EdgeRadius: 0
 --- !u!1 &489731374
 GameObject:
@@ -4508,7 +4507,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 98f1b389e231e504490a61addf8cee23, type: 3}
     - target: {fileID: 8850228919143500783, guid: 97982e0384da2c5468000ba74a423da8, type: 3}
       propertyPath: m_Size.x
-      value: 0.5629564
+      value: 0.514459
       objectReference: {fileID: 0}
     - target: {fileID: 8850228919143500783, guid: 97982e0384da2c5468000ba74a423da8, type: 3}
       propertyPath: m_Size.y
@@ -4516,7 +4515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8850228919143500783, guid: 97982e0384da2c5468000ba74a423da8, type: 3}
       propertyPath: m_Offset.x
-      value: -0.05077835
+      value: -0.07502704
       objectReference: {fileID: 0}
     - target: {fileID: 8850228919143500783, guid: 97982e0384da2c5468000ba74a423da8, type: 3}
       propertyPath: m_Offset.y
