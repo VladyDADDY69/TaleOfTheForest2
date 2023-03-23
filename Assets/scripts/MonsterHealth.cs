@@ -11,7 +11,7 @@ public class MonsterHealth : MonoBehaviour
     {
         mhp = maxHp;
     }
-    public void TakeDmg(int dmg)
+    public void TakeDmg(int dmg = 5)
     {
         mhp -= dmg;
     }

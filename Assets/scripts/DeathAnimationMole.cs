@@ -30,6 +30,6 @@ public class DeathAnimationMole : MonoBehaviour
     private void Die()
     {
         rb.bodyType = RigidbodyType2D.Static;
-        anim.SetTrigger("Mole_death");
+        Destroy(gameObject);
     }
 }
