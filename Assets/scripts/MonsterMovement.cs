@@ -8,7 +8,7 @@ public class MonsterMovement : MonoBehaviour
     public bool isChasing;
     public float chaseDistance;
     public float moveSpeed;
-    
+    public MonsterMovement2 monsterMovement2;
     public int mvsp = 1;
     private MonsterDamage hop;
 
@@ -23,7 +23,8 @@ public class MonsterMovement : MonoBehaviour
     {
         if (isChasing)
         {
-            if(hop.hpPlayer <= 0)
+
+            if (hop.hpPlayer <= 0)
             {
                 mvsp = 0;
             }
