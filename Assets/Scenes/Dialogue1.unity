@@ -2699,13 +2699,9 @@ MonoBehaviour:
   - 'Kai: Who are you?'
   - 'Brown Owl: I am the Brown Owl.'
   - 'Kai: Cool'
-  - bla
-  - 'bla bla '
-  - bla bla bla
   dialogue2:
   - 'Kai: You suck!'
   - 'Mia: Yeah!'
-  - 'Brown Owl: ..,.,..'
   answers:
   - {fileID: 1476831110}
   - {fileID: 1657795529}
