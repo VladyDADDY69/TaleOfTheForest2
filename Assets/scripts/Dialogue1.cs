@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogue1 : MonoBehaviour
+public class Dialogue2 : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -33,11 +33,7 @@ public class Dialogue1 : MonoBehaviour
         if(canContinue && Input.GetMouseButtonDown(0))
         {
             index++;
-            if (index >= dialogue1.Length - 1 || index >= dialogue2.Length - 1)
-            {
-
-                SceneManager.LoadScene(nextSceneToLoad);
-            }
+            
             if (option==1)
             {
                 dialoguePanel.SetActive(true);
@@ -48,10 +44,12 @@ public class Dialogue1 : MonoBehaviour
                 dialoguePanel.SetActive(true);
                 dialogueText.text = (dialogue2[index]);
             }
-           
+            if (index == dialogue1.Length - 1 || index == dialogue2.Length - 1)
+            {
+                SceneManager.LoadScene(nextSceneToLoad);
+            }
 
         }
-        
 
     }
 
@@ -84,7 +82,6 @@ public class Dialogue1 : MonoBehaviour
 
         
     }
-    
 
 
 }
