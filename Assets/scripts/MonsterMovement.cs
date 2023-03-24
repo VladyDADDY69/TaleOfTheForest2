@@ -23,7 +23,7 @@ public class MonsterMovement : MonoBehaviour
     {
         if (isChasing)
         {
-            gameObject.Find("gameobject").GetComponent(scriptname).enabled = false;
+
             if (hop.hpPlayer <= 0)
             {
                 mvsp = 0;
