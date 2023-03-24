@@ -39,8 +39,7 @@ public class Projectile : MonoBehaviour
         }
         if (collision.gameObject.tag == "WeakPoint")
         {
-            monsterHealth.TakeDmg(dmg);
-            hpMonster = hpMonster - dmg;
+            Destroy(collision.gameObject);
         }
         Destroy(gameObject);
     }
