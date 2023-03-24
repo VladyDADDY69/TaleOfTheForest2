@@ -16,12 +16,8 @@ public class MonsterMovement : MonoBehaviour
     void Start()
     {
         hop = GetComponent<MonsterDamage>();
-        
     }
-    void FixedUpdate()
-    {
-       
-    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -39,7 +35,7 @@ public class MonsterMovement : MonoBehaviour
             if (transform.position.x < playerTransform.position.x)
             {
                 transform.localScale = new Vector3(-1, 1, 1);
-                transform.position += Vector3.right * moveSpeed * Time.deltaTime*mvsp;
+                transform.position += Vector3.right * moveSpeed * Time.deltaTime * mvsp;
             }
         }
         else

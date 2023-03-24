@@ -2617,7 +2617,7 @@ MonoBehaviour:
   - 'Mia: wow'
   - 'Kai: No way! But how?'
   - 'Brown Owl: I have the power oh money'
-  wordSpeed: 0.01
+  wordSpeed: 0.06
   contButton: {fileID: 1867205300}
 --- !u!4 &1622763939
 Transform:
