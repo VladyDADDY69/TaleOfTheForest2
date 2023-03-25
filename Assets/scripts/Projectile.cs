@@ -11,6 +11,9 @@ public class Projectile : MonoBehaviour
     public float projectileCount;
     public int hpMonster;
     public MonsterHealth monsterHealth;
+    public BossHealth bossHealth;
+    public int damage;
+    public int hpBoss;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,11 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.tag == "WeakPoint")
         {
             Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Boss")
+        {
+            bossHealth.TakeDamage(damage);
+            hpBoss = hpBoss - damage;
         }
         Destroy(gameObject);
     }

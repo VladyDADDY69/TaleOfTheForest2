@@ -153,3 +153,6 @@ MonoBehaviour:
   projectileCount: 0
   hpMonster: 10
   monsterHealth: {fileID: 0}
+  bossHealth: {fileID: 0}
+  damage: 100
+  hpBoss: 500
