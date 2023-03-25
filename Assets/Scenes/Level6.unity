@@ -1308,9 +1308,10 @@ GameObject:
   - component: {fileID: 1023262001}
   - component: {fileID: 1023262002}
   - component: {fileID: 1023262003}
+  - component: {fileID: 1023262004}
   m_Layer: 0
   m_Name: MoeTheMole
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1482,6 +1483,22 @@ MonoBehaviour:
   playerHealth: {fileID: 1649720095}
   playerMovement: {fileID: 1649720107}
   hpPlayer: 10
+--- !u!114 &1023262004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023261995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb41fe5ab2c9f142b97283b7cdd751f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  deathEffect: {fileID: 0}
+  isInvulnerable: 0
+  healthBar: {fileID: 1468248630}
 --- !u!1 &1038466398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,6 +2342,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f659dc209e5b8b47ad64ba89ae64130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1649720110 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8671261463521034950, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+  m_PrefabInstance: {fileID: 8671261462953474525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1685434347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,6 +3425,10 @@ PrefabInstance:
       propertyPath: KBForce
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8671261463521034948, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1649720110}
     - target: {fileID: 8671261463521034948, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
       propertyPath: KBCounter
       value: -7.25

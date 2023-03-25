@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
@@ -11,26 +12,22 @@ public class BossHealth : MonoBehaviour
 
 	public bool isInvulnerable = false;
 
+	public Slider healthBar;
 	public void TakeDamage(int damage)
 	{
-		if (isInvulnerable)
-			return;
-
+		
 		health -= damage;
-
-		if (health <= 200)
-		{
-			GetComponent<Animator>().SetBool("IsEnraged", true);
-		}
 
 		if (health <= 0)
 		{
 			Die();
 		}
+		healthBar.value = health;
 	}
 
 	void Die()
 	{
+		//Alex, la partea asta bagi choice ul daca il omoara sau nu
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
