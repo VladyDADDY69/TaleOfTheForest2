@@ -33,20 +33,20 @@ public class Dialogue1 : MonoBehaviour
         if(canContinue && Input.GetMouseButtonDown(0))
         {
             index++;
-            if (index >= dialogue1.Length - 1 || index >= dialogue2.Length - 1)
-            {
-
-                SceneManager.LoadScene(nextSceneToLoad);
-            }
-            if (option==1)
+            
+            if (option==1 && dialogue1.Length > index)
             {
                 dialoguePanel.SetActive(true);
                 dialogueText.text = (dialogue1[index]);
             }
-            else if (option == 2)
+            else if (option == 2 && dialogue2.Length > index)
             {
                 dialoguePanel.SetActive(true);
                 dialogueText.text = (dialogue2[index]);
+            }
+            else
+            {
+                SceneManager.LoadScene(nextSceneToLoad);
             }
            
 
