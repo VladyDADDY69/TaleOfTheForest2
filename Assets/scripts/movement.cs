@@ -14,6 +14,7 @@ public class movement : MonoBehaviour
     public float KBCounter;
     public float KBTotalTime;
     public Animator animator;
+    public bool isFacingRight;
 
  
 
@@ -84,11 +85,13 @@ public class movement : MonoBehaviour
         if (dirx > 0f)
         {
             sprite.flipX = false;
+            isFacingRight = true;
         }
 
         else if (dirx < 0f)
         {
             sprite.flipX = true;
+            isFacingRight = false;
         }
 
     }

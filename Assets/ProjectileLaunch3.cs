@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileLaunch : MonoBehaviour
+public class ProjectileLaunch3 : MonoBehaviour
 {
     public GameObject projectilePrefab;
     public Transform launchPoint;
@@ -19,9 +19,10 @@ public class ProjectileLaunch : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {  
-        if(direction.isFacingRight)
-        { if (Input.GetButtonDown("Fire1") && shootCounter <= 0)
+    {
+        if (!direction.isFacingRight)
+        {
+            if (Input.GetButtonDown("Fire1") && shootCounter <= 0)
             {
                 Instantiate(projectilePrefab, launchPoint.position, Quaternion.identity);
                 shootCounter = shootTime;
