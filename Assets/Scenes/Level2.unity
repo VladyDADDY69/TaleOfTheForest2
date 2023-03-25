@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 277316080}
   - component: {fileID: 277316082}
   - component: {fileID: 277316083}
+  - component: {fileID: 277316084}
   m_Layer: 8
   m_Name: mole
   m_TagString: WeakPoint
@@ -449,6 +450,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &277316084
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277316076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2a5b909328dd8440953343dfadf35e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &515441426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870358192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.526, y: -0.472, z: 0}
+  m_LocalPosition: {x: -0.526, y: -0.501, z: 0}
   m_LocalScale: {x: 0.4460894, y: 0.24152859, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2340,7 +2361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387873930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.909, y: -0.277, z: 0}
+  m_LocalPosition: {x: -2.776, y: -0.513, z: 0}
   m_LocalScale: {x: 0.4460894, y: 0.24152859, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2939,6 +2960,11 @@ MonoBehaviour:
   launchPoint: {fileID: 2142858861}
   shootTime: 0.5
   shootCounter: 0
+--- !u!95 &1649720102 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8671261463521034950, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+  m_PrefabInstance: {fileID: 8671261462953474525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1733761423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3083,6 +3109,11 @@ MonoBehaviour:
   launchPoint: {fileID: 2000396891}
   shootTime: 0.2
   shootCounter: 0
+--- !u!95 &1864057499 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8671261463867019430, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+  m_PrefabInstance: {fileID: 8671261462953474525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1883736369
 GameObject:
   m_ObjectHideFlags: 0
@@ -5419,6 +5450,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8671261463521034948, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1649720102}
+    - target: {fileID: 8671261463521034948, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
       propertyPath: KBCounter
       value: -7.25
       objectReference: {fileID: 0}
@@ -5494,6 +5529,10 @@ PrefabInstance:
       propertyPath: KBForce
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8671261463867019431, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1864057499}
     - target: {fileID: 8671261463867019431, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
       propertyPath: KBCounter
       value: -7.25

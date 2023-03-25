@@ -13,8 +13,10 @@ public class movement : MonoBehaviour
     public float KBForce;
     public float KBCounter;
     public float KBTotalTime;
+    public Animator animator;
 
-    
+ 
+
 
     public bool KnockFromRight;
     
@@ -57,14 +59,24 @@ public class movement : MonoBehaviour
     }
     private void Update()
     {
-       
+        animator.SetFloat("speed", Mathf.Abs(dirx));
             dirx = Input.GetAxisRaw("Horizontal");
         
         if (Input.GetButtonDown("Jump") && GC())
         {
+            animator.SetBool("isJumping", true);
             rb.velocity = new Vector2(rb.velocity.x, 3.5f);
-
         }
+        else
+        {
+                StartCoroutine(WaitForFunction());
+                animator.SetBool("isJumping", false);
+        }
+    }
+    IEnumerator WaitForFunction()
+    {
+        yield return new WaitForSeconds(4);
+        
     }
     private void UpdateAnimationUpdate()
     {
