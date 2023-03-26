@@ -46,6 +46,7 @@ public class Projectile : MonoBehaviour
         }
         if (collision.gameObject.tag == "Boss")
         {
+            
             hpBoss = hpBoss - damage;
         }
         Destroy(gameObject);

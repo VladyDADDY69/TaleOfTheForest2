@@ -178,10 +178,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: mole
       objectReference: {fileID: 0}
+    - target: {fileID: 8592619231149498149, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
+      propertyPath: m_TagString
+      value: Mole
+      objectReference: {fileID: 0}
     - target: {fileID: 8592619231149498168, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
       propertyPath: playerHealth
       value: 
-      objectReference: {fileID: 1864057483}
+      objectReference: {fileID: 0}
     - target: {fileID: 8592619231149498168, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
       propertyPath: playerMovement
       value: 
@@ -189,7 +193,7 @@ PrefabInstance:
     - target: {fileID: 8592619231149498169, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
       propertyPath: playerHealth
       value: 
-      objectReference: {fileID: 1649720095}
+      objectReference: {fileID: 0}
     - target: {fileID: 8592619231149498169, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
       propertyPath: playerMovement
       value: 
@@ -202,7 +206,9 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1019891129}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8592619231149498169, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
+    - {fileID: 8592619231149498168, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b535f3801af8a4f4d8f30c2c399e33f3, type: 3}
 --- !u!20 &73759698 stripped
 Camera:
@@ -1784,20 +1790,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8671261463521034949, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
   m_PrefabInstance: {fileID: 8671261462953474525}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1649720095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166601390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb555edb75dbb714eba893f4ad2106fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  health: 0
 --- !u!114 &1649720104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,20 +1812,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8671261463867019432, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
   m_PrefabInstance: {fileID: 8671261462953474525}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1864057483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864057467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb555edb75dbb714eba893f4ad2106fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  health: 0
 --- !u!1 &1883736369
 GameObject:
   m_ObjectHideFlags: 0
