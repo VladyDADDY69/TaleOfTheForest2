@@ -5,23 +5,22 @@ using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
+    public int maxHealth = 10;
+    public int currentHealth;
+    void Start()
+    {
+        currentHealth = maxHealth;
+    }
+    void Update()
+    {
 
-	public Slider slider;
-	public Gradient gradient;
-	public Image fill;
-	public void SetMaxHealth(int health)
-	{
-		slider.maxValue = health;
-		slider.value = health;
-
-		fill.color = gradient.Evaluate(1f);
-	}
-
-	public void SetHealth(int health)
-	{
-		slider.value = health;
-
-		fill.color = gradient.Evaluate(slider.normalizedValue);
-	}
-
+    }
+    public void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+        if(currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
