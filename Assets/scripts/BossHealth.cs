@@ -6,30 +6,22 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
 
-	public int health = 500;
-
-	public GameObject deathEffect;
-
-	public bool isInvulnerable = false;
-
-	public Slider healthBar;
-	public void TakeDamage(int damage)
+	public Slider slider;
+	public Gradient gradient;
+	public Image fill;
+	public void SetMaxHealth(int health)
 	{
-		
-		health -= damage;
+		slider.maxValue = health;
+		slider.value = health;
 
-		if (health <= 0)
-		{
-			Die();
-		}
-		healthBar.value = health;
+		fill.color = gradient.Evaluate(1f);
 	}
 
-	void Die()
+	public void SetHealth(int health)
 	{
-		//Alex, la partea asta bagi choice ul daca il omoara sau nu
-		Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(gameObject);
+		slider.value = health;
+
+		fill.color = gradient.Evaluate(slider.normalizedValue);
 	}
 
 }
