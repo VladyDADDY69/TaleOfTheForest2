@@ -44,9 +44,6 @@ public class Projectile : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-<<<<<<< Updated upstream
-        
-=======
         if (collision.gameObject.tag == "Boss")
         {
 <<<<<<< Updated upstream
@@ -55,7 +52,6 @@ public class Projectile : MonoBehaviour
 >>>>>>> Stashed changes
             hpBoss = hpBoss - damage;
         }
->>>>>>> Stashed changes
         Destroy(gameObject);
     }
 }
