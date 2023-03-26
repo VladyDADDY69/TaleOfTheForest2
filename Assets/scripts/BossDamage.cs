@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class BossDamage : MonoBehaviour
 {
-    public int damage;
-    public PlayerHealth playerHealth;
+    
     public movement playerMovement;
-    public int hpPlayer;
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,8 +21,7 @@ public class BossDamage : MonoBehaviour
             {
                 playerMovement.KnockFromRight = false;
             }
-            playerHealth.TakeDamage(damage);
-            hpPlayer = hpPlayer - damage;
+            
         }
     }
 }

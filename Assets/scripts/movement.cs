@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    
+
     public Rigidbody2D myRigidbody;
     private CapsuleCollider2D coll;
     private SpriteRenderer sprite;
@@ -13,24 +13,18 @@ public class movement : MonoBehaviour
     public float KBForce;
     public float KBCounter;
     public float KBTotalTime;
-    public Animator animator;
+    public bool KnockFromRight;
     public bool isFacingRight;
 
- 
-
-
-    public bool KnockFromRight;
-    
-    
     [SerializeField] private LayerMask jumpableGround;
     // Start is called before the first frame update 
 
     private void Start()
     {
-       
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<CapsuleCollider2D>();
+       
 
     }
 
@@ -38,18 +32,18 @@ public class movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+
         if (KBCounter <= 0)
         {
             rb.velocity = new Vector2(dirx, rb.velocity.y);
         }
         else
         {
-            if(KnockFromRight == true)
+            if (KnockFromRight == true)
             {
                 rb.velocity = new Vector2(-KBForce, KBForce);
             }
-            if(KnockFromRight ==false)
+            if (KnockFromRight == false)
             {
                 rb.velocity = new Vector2(KBForce, KBForce);
             }
@@ -60,24 +54,14 @@ public class movement : MonoBehaviour
     }
     private void Update()
     {
-        animator.SetFloat("speed", Mathf.Abs(dirx));
-            dirx = Input.GetAxisRaw("Horizontal");
-        
+
+        dirx = Input.GetAxisRaw("Horizontal");
+
         if (Input.GetButtonDown("Jump") && GC())
         {
-            animator.SetBool("isJumping", true);
             rb.velocity = new Vector2(rb.velocity.x, 3.5f);
+
         }
-        else
-        {
-                StartCoroutine(WaitForFunction());
-                animator.SetBool("isJumping", false);
-        }
-    }
-    IEnumerator WaitForFunction()
-    {
-        yield return new WaitForSeconds(4);
-        
     }
     private void UpdateAnimationUpdate()
     {
@@ -86,21 +70,19 @@ public class movement : MonoBehaviour
         {
             sprite.flipX = false;
             isFacingRight = true;
+            
         }
 
         else if (dirx < 0f)
         {
             sprite.flipX = true;
             isFacingRight = false;
+            
         }
 
     }
-
-    
-    
     private bool GC()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
-
 }
