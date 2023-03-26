@@ -7,9 +7,12 @@ public class BossHealth : MonoBehaviour
 {
     public int maxHealth = 10;
     public int currentHealth;
+    public Slider HealthBar;
     void Start()
     {
+        HealthBar.value = currentHealth;
         currentHealth = maxHealth;
+        HealthBar.value = currentHealth;
     }
     void Update()
     {
@@ -18,7 +21,8 @@ public class BossHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-        if(currentHealth <= 0)
+        HealthBar.value = currentHealth;
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
