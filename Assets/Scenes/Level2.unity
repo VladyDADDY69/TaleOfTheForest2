@@ -289,10 +289,9 @@ GameObject:
   - component: {fileID: 277316082}
   - component: {fileID: 277316083}
   - component: {fileID: 277316084}
-  - component: {fileID: 277316085}
   m_Layer: 8
   m_Name: mole
-  m_TagString: WeakPoint
+  m_TagString: Mole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,8 +324,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010573189, y: -0.07510034}
-  m_Size: {x: 0.28416985, y: 0.16817947}
+  m_Offset: {x: -0.013864923, y: -0.07948924}
+  m_Size: {x: 0.23808704, y: 0.14623512}
   m_Direction: 1
 --- !u!212 &277316079
 SpriteRenderer:
@@ -411,7 +410,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 1387873931}
   - {fileID: 870358193}
-  moveSpeed: 0.8
+  moveSpeed: 0.5
   patrolDestination: 0
 --- !u!50 &277316083
 Rigidbody2D:
@@ -454,22 +453,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &277316085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277316076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 963b5e2cbc394d449936c8ca2188ec33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 1864057506}
-  playerMovement: {fileID: 1864057502}
-  hpPlayer: 0
 --- !u!1 &515441426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2869,20 +2852,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8671261463521034950, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
   m_PrefabInstance: {fileID: 8671261462953474525}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1649720107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166601390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb555edb75dbb714eba893f4ad2106fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  health: 0
 --- !u!114 &1649720108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3020,17 +2989,6 @@ MonoBehaviour:
   shootTime: 0.4
   shootCounter: 0
   direction: {fileID: 0}
---- !u!114 &1864057502 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8671261463867019431, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
-  m_PrefabInstance: {fileID: 8671261462953474525}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864057467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f659dc209e5b8b47ad64ba89ae64130, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1864057506
 MonoBehaviour:
   m_ObjectHideFlags: 0

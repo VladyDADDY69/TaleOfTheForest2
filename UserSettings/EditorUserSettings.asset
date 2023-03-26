@@ -7,6 +7,7 @@ EditorUserSettings:
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 060350045c545c5a5b575c7442765e44104e40297c2a7f35292c4b67e7b4676f
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -21,14 +22,17 @@ EditorUserSettings:
 >>>>>>> Stashed changes
       value: 0500045456020b0f54570d2615720944414f1e7b292b246675794a32e0b0373a
 =======
+=======
+>>>>>>> Stashed changes
       value: 5453515353570b08095f557015730c44414f1d7e7a2973642c2d4c66e3b56068
       flags: 0
-    RecentlyUsedSceneGuid-3:
+    RecentlyUsedSceneGuid-1:
       value: 0500045456020b0f54570d2615720944414f1e7b292b246675794a32e0b0373a
       flags: 0
-    RecentlyUsedSceneGuid-4:
+    RecentlyUsedSceneGuid-2:
       value: 5601015557040a0b545b5e74402008441215417a2d7b20697c791867e1b4623b
       flags: 0
+<<<<<<< Updated upstream
     RecentlyUsedSceneGuid-5:
       value: 01040d5654035e5f550a5b2611270c4444164a792e7c22367f2f4c65b6b76561
       flags: 0
@@ -41,10 +45,21 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-3:
       value: 01040d5654035e5f550a5b2611270c4444164a792e7c22367f2f4c65b6b76561
+=======
+    RecentlyUsedSceneGuid-3:
+      value: 01040d5654035e5f550a5b2611270c4444164a792e7c22367f2f4c65b6b76561
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 5306005654535c0e0e0d54734327084415161b292e7123642c7f1835bbb2673a
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 0201550555065a5f0b0d092745745944414e487a7c2c77607d2c4a36e0b16161
+>>>>>>> Stashed changes
       flags: 0
     RecentlyUsedSceneGuid-4:
       value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
       flags: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     RecentlyUsedSceneGuid-7:
@@ -64,6 +79,10 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-8:
 >>>>>>> Stashed changes
       value: 0201550555065a5f0b0d092745745944414e487a7c2c77607d2c4a36e0b16161
+=======
+    RecentlyUsedSceneGuid-7:
+      value: 5b53055407540f025f0f087341205a4417154a78752924677d704432e6b7323b
+>>>>>>> Stashed changes
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
@@ -73,8 +92,8 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 4
-  m_StandbyImportWorkerCount: 2
+  m_DesiredImportWorkerCount: 1
+  m_StandbyImportWorkerCount: 1
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
