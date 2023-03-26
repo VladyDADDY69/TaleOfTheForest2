@@ -4,28 +4,31 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+	public int maxHealth = 100;
+	public int currentHealth;
 
-	public Transform player;
+	public HealthBar healthBar;
 
-	public bool isFlipped = false;
-
-	public void LookAtPlayer()
+	// Start is called before the first frame update
+	void Start()
 	{
-		Vector3 flipped = transform.localScale;
-		flipped.z *= -1f;
+		currentHealth = maxHealth;
+		healthBar.SetMaxHealth(maxHealth);
+	}
 
-		if (transform.position.x > player.position.x && isFlipped)
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			transform.localScale = flipped;
-			transform.Rotate(0f, 180f, 0f);
-			isFlipped = false;
-		}
-		else if (transform.position.x < player.position.x && !isFlipped)
-		{
-			transform.localScale = flipped;
-			transform.Rotate(0f, 180f, 0f);
-			isFlipped = true;
+			TakeDamage(20);
 		}
 	}
 
+	void TakeDamage(int damage)
+	{
+		currentHealth -= damage;
+
+		healthBar.SetHealth(currentHealth);
+	}
 }
