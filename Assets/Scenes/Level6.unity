@@ -6987,7 +6987,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6868797605618300472, guid: f9b20d108962bcb409a228a9c68bb94e, type: 3}
+<<<<<<< Updated upstream
   launchPoint: {fileID: 231885530}
+=======
+  launchPoint: {fileID: 1771735729}
+>>>>>>> Stashed changes
   shootTime: 0.5
   shootCounter: 0
   direction: {fileID: 0}
@@ -7674,6 +7678,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1771735729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5532977627490409446, guid: 1a919616b3342764baf5b5e097b6732d, type: 3}
+  m_PrefabInstance: {fileID: 414755050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1864057467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8671261463867019432, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
