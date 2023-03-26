@@ -40,7 +40,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "WeakPoint")
+        if (collision.gameObject.tag == "Mole")
         {
             Destroy(collision.gameObject);
         }

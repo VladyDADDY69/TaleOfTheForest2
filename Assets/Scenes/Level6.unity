@@ -1837,6 +1837,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252684248}
   m_CullTransparentMesh: 1
+--- !u!4 &1311194704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5532977627490409446, guid: 1a919616b3342764baf5b5e097b6732d, type: 3}
+  m_PrefabInstance: {fileID: 414755050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390837329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,7 +2452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6868797605618300472, guid: f9b20d108962bcb409a228a9c68bb94e, type: 3}
-  launchPoint: {fileID: 0}
+  launchPoint: {fileID: 1311194704}
   shootTime: 0.5
   shootCounter: 0
   direction: {fileID: 0}

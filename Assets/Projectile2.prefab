@@ -149,7 +149,7 @@ MonoBehaviour:
   projectileRb: {fileID: 8310271729916863404}
   speed: 0
   dmg: 5
-  projectileLife: 1
+  projectileLife: 2
   projectileCount: 0
   hpMonster: 0
   monsterHealth: {fileID: 0}

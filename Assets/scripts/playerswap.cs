@@ -15,6 +15,7 @@ public class playerswap : MonoBehaviour
     public bool player1Active = true;
     public bool bg1Active = true;
 
+
     float distanceFromPlayer => subject2.position.x - subject1.position.x;
 
     // Start is called before the first frame update
