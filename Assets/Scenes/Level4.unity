@@ -1192,6 +1192,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1106805754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5532977627490409446, guid: 1a919616b3342764baf5b5e097b6732d, type: 3}
+  m_PrefabInstance: {fileID: 606250961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1166601390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8671261463521034953, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
@@ -1686,9 +1691,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6868797605618300472, guid: f9b20d108962bcb409a228a9c68bb94e, type: 3}
-  launchPoint: {fileID: 0}
+  launchPoint: {fileID: 1106805754}
   shootTime: 0.5
   shootCounter: 0
+  direction: {fileID: 0}
 --- !u!1001 &1833370730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3831,7 +3837,12 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8671261463521034950, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
   m_PrefabInstance: {fileID: 8671261462953474525}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8671261462953474529
+--- !u!95 &8671261462953474535 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8671261463867019430, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+  m_PrefabInstance: {fileID: 8671261462953474525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8671261462953474536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3840,18 +3851,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1864057467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00301daaf31a7334ea35418d1e17be86, type: 3}
+  m_Script: {fileID: 11500000, guid: 330bad1a6e16624449ee684f1736c7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4252675211804961913, guid: d97e3ec740b12784685f5bb1f039802f, type: 3}
   launchPoint: {fileID: 1964848967}
-  shootTime: 0.4
+  shootTime: 0.04
   shootCounter: 0
---- !u!95 &8671261462953474535 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8671261463867019430, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
-  m_PrefabInstance: {fileID: 8671261462953474525}
-  m_PrefabAsset: {fileID: 0}
+  direction: {fileID: 0}
 --- !u!1001 &8850228920118089675
 PrefabInstance:
   m_ObjectHideFlags: 0
