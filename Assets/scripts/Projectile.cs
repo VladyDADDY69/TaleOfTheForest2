@@ -44,11 +44,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "Boss")
-        {
-            bossHealth.TakeDamage(damage);
-            hpBoss = hpBoss - damage;
-        }
+        
         Destroy(gameObject);
     }
 }
