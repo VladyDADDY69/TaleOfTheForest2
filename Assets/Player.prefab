@@ -351,7 +351,6 @@ GameObject:
   - component: {fileID: 8671261463521034948}
   - component: {fileID: 8671261463521034950}
   - component: {fileID: 8671261463521034945}
-  - component: {fileID: 2194141140805966018}
   m_Layer: 0
   m_Name: 'mia '
   m_TagString: Untagged
@@ -483,6 +482,7 @@ MonoBehaviour:
   KBTotalTime: 0
   KnockFromRight: 0
   isFacingRight: 0
+  animator: {fileID: 0}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
@@ -518,19 +518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4502e8bb14b4d424ea7a6321a9bb408a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2194141140805966018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8671261463521034953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fff9b7d97d51aa47ad2629fdebd533d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CluesText: {fileID: 0}
 --- !u!1 &8671261463742405849
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +721,7 @@ MonoBehaviour:
   KBTotalTime: 0
   KnockFromRight: 0
   isFacingRight: 0
+  animator: {fileID: 0}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64

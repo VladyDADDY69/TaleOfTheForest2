@@ -14,6 +14,7 @@ public class Projectile : MonoBehaviour
     public BossHealth bossHealth;
     public int damage;
     public int hpBoss;
+    public int hpWolf;
 
     // Start is called before the first frame update
     void Start()
@@ -46,8 +47,11 @@ public class Projectile : MonoBehaviour
         }
         if (collision.gameObject.tag == "Boss")
         {
-            
             hpBoss = hpBoss - damage;
+        }
+        if (collision.gameObject.tag == "Wolf")
+        {
+            hpWolf = hpWolf - damage;
         }
         Destroy(gameObject);
     }

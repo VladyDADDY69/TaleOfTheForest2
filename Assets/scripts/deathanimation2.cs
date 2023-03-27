@@ -30,6 +30,10 @@ public class deathanimation2 : MonoBehaviour
         {
             Die();
         }
+        if (collision.gameObject.CompareTag("Wolf"))
+        {
+            Die();
+        }
     }
 
     private void Die()
