@@ -3204,7 +3204,8 @@ MonoBehaviour:
   launchPoint: {fileID: 2142858861}
   shootTime: 0.5
   shootCounter: 0
-  direction: {fileID: 0}
+  direction: {fileID: 1649720098}
+  animator: {fileID: 1649720102}
 --- !u!95 &1649720102 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8671261463521034950, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
@@ -3346,7 +3347,8 @@ MonoBehaviour:
   launchPoint: {fileID: 2000396891}
   shootTime: 0.4
   shootCounter: 0
-  direction: {fileID: 0}
+  direction: {fileID: 8671261462953474526}
+  animator: {fileID: 1864057499}
 --- !u!114 &1864057506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5843,6 +5845,17 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8671261463521034945, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+--- !u!114 &8671261462953474526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8671261463867019431, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
+  m_PrefabInstance: {fileID: 8671261462953474525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864057467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f659dc209e5b8b47ad64ba89ae64130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8850228920118089675
 PrefabInstance:
   m_ObjectHideFlags: 0

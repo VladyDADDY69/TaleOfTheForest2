@@ -1686,7 +1686,8 @@ MonoBehaviour:
   launchPoint: {fileID: 1106805754}
   shootTime: 0.5
   shootCounter: 0
-  direction: {fileID: 0}
+  direction: {fileID: 8671261462953474526}
+  animator: {fileID: 8671261462953474528}
 --- !u!1 &1798142630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,7 +3942,8 @@ MonoBehaviour:
   launchPoint: {fileID: 1964848967}
   shootTime: 0.04
   shootCounter: 0
-  direction: {fileID: 0}
+  direction: {fileID: 8671261462953474527}
+  animator: {fileID: 8671261462953474535}
 --- !u!1001 &8850228920118089675
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1806,7 +1806,8 @@ MonoBehaviour:
   launchPoint: {fileID: 2142858861}
   shootTime: 0.5
   shootCounter: 0
-  direction: {fileID: 0}
+  direction: {fileID: 8671261462953474526}
+  animator: {fileID: 8671261462953474531}
 --- !u!1 &1864057467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8671261463867019432, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
@@ -3879,7 +3880,8 @@ MonoBehaviour:
   launchPoint: {fileID: 316417879}
   shootTime: 0.4
   shootCounter: 0
-  direction: {fileID: 0}
+  direction: {fileID: 8671261462953474527}
+  animator: {fileID: 760165446}
 --- !u!95 &8671261462953474531 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8671261463521034950, guid: 097c0876fba4a45468f5d5cdca4b5033, type: 3}
