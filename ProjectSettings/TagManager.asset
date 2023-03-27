@@ -9,6 +9,7 @@ TagManager:
   - Boss
   - Mole
   - MainPlayer
+  - Clue
   layers:
   - Default
   - TransparentFX
