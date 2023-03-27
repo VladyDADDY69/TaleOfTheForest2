@@ -15,6 +15,7 @@ public class movement : MonoBehaviour
     public float KBTotalTime;
     public bool KnockFromRight;
     public bool isFacingRight;
+    public Animator animator;
 
     [SerializeField] private LayerMask jumpableGround;
     // Start is called before the first frame update 
@@ -54,14 +55,28 @@ public class movement : MonoBehaviour
     }
     private void Update()
     {
-
+        animator.SetFloat("speed", Mathf.Abs(dirx));
+        animator.SetFloat("speed1", Mathf.Abs(dirx));
         dirx = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && GC())
         {
+            animator.SetBool("isJumping", true);
+            animator.SetBool("isJumping1", true);
             rb.velocity = new Vector2(rb.velocity.x, 3.5f);
 
         }
+        else
+        {
+            StartCoroutine(WaitForFunction());
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isJumping1", false);
+        }
+    }
+    IEnumerator WaitForFunction()
+    {
+        yield return new WaitForSeconds(4);
+
     }
     private void UpdateAnimationUpdate()
     {

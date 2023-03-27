@@ -13,7 +13,7 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject);
             clue++;
-            CluesText.text = "Minors: " + clue;
+            CluesText.text = "Clues: " + clue;
         }
     }
 }

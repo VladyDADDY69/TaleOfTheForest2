@@ -1511,7 +1511,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 40, y: 1.5307528}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -1526,8 +1526,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114920939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.988, y: 2.097, z: 0}
-  m_LocalScale: {x: 1, y: 1.711117, z: 1}
+  m_LocalPosition: {x: -1.982, y: 6.49, z: 0}
+  m_LocalScale: {x: 12.5, y: 6.232986, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3118,7 +3118,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7775877808690392229}
   - component: {fileID: 7775877808690392228}
-  - component: {fileID: 7775877808690392232}
   m_Layer: 0
   m_Name: fg trees
   m_TagString: Untagged
@@ -3186,27 +3185,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7775877808690392227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.95, y: 0, z: 0.2800007}
+  m_LocalPosition: {x: -1.95, y: 0.082, z: 0.2800007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7775877808690392232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7775877808690392227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f566aa9fdcba5a446ad9ac271d600659, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam2: {fileID: 73759698}
-  subject: {fileID: 1649720088}
 --- !u!1001 &7780148335059976351
 PrefabInstance:
   m_ObjectHideFlags: 0
