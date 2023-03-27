@@ -6,12 +6,13 @@ public class Projectile : MonoBehaviour
 {
     public Rigidbody2D projectileRb;
     public float speed;
-    public int dmg = 5;
+    public int dmg ;
     public float projectileLife;
     public float projectileCount;
     public int hpMonster;
     public MonsterHealth monsterHealth;
     public BossHealth bossHealth;
+    public WolfHealth wolfHealth;
     public int damage;
     public int hpBoss;
     public int hpWolf;
@@ -51,7 +52,7 @@ public class Projectile : MonoBehaviour
         }
         if (collision.gameObject.tag == "Wolf")
         {
-            hpWolf = hpWolf - damage;
+            hpWolf = hpWolf - dmg;
         }
         Destroy(gameObject);
     }

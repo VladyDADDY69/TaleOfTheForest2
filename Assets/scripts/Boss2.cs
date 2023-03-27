@@ -10,5 +10,9 @@ public class Boss2 : MonoBehaviour
         {
             collision.gameObject.GetComponent<BossHealth>().TakeDamage(4);
         }
+        if (collision.collider.gameObject.tag == "Wolf")
+        {
+            collision.gameObject.GetComponent<BossHealth>().TakeDamage(4);
+        }
     }
 }

@@ -149,14 +149,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileRb: {fileID: 2702312918511374991}
   speed: 3
-  dmg: 5
+  dmg: 100
   projectileLife: 0.5
   projectileCount: 0
   hpMonster: 10
   monsterHealth: {fileID: 0}
   bossHealth: {fileID: 0}
+  wolfHealth: {fileID: 0}
   damage: 100
   hpBoss: 500
+  hpWolf: 300
 --- !u!114 &6862864029298515695
 MonoBehaviour:
   m_ObjectHideFlags: 0
