@@ -9,17 +9,11 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private Text CluesText;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Clue"))
+        if (collision.gameObject.CompareTag("Clue"))
         {
             Destroy(collision.gameObject);
-            ClueTransfer.totalClues = clue;
-            clue++;
-            CluesText.text = "Clues: " + clue;
+            ClueTransfer.totalClues = clue + 1;
+            CluesText.text = "Clues: " + ClueTransfer.totalClues;
         }
-    }
-    public void GetClues()
-    {
-        int recievedClues = ClueTransfer.totalClues;
-        CluesText.text = "Clues: " + recievedClues;
     }
 }
