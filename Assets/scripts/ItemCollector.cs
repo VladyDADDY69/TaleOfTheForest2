@@ -13,7 +13,12 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject);
             clue++;
+<<<<<<< Updated upstream
             CluesText.text = "Clues: " + clue;
+=======
+            ClueTransfer.totalClues = clue;
+            CluesText.text = "Minors: " + clue;
+>>>>>>> Stashed changes
         }
     }
 }
