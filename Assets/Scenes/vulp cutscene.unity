@@ -2851,7 +2851,7 @@ MonoBehaviour:
     place.
   answers:
   - {fileID: 1246239111}
-  speed: 0
+  speed: 0.05
   button: {fileID: 1562774518}
   scene1: between owl and cat 4
   scene2: 

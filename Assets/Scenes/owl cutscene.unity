@@ -2739,7 +2739,7 @@ MonoBehaviour:
   - Greetings wanderers! It seems you have arrived just in time!
   answers:
   - {fileID: 1476831110}
-  speed: 0.06
+  speed: 0.05
   button: {fileID: 126031589}
   scene1: owl cutscene 1
   scene2: ' owl cutscene 1'

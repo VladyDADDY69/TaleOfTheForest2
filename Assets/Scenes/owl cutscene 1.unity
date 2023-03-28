@@ -2716,7 +2716,7 @@ MonoBehaviour:
     the one who follows!
   answers:
   - {fileID: 1220719921}
-  speed: 0.06
+  speed: 0.05
   button: {fileID: 1205248752}
   scene1: between owl and cat 1
   scene2: between owl and cat 1

@@ -2343,7 +2343,7 @@ MonoBehaviour:
   - Creations from afar, find the truth in the unknown, see beyond our forged world!
   answers:
   - {fileID: 665078974}
-  speed: 0.06
+  speed: 0.05
   button: {fileID: 1599941491}
   scene1: loading screen
   scene2: loading screen

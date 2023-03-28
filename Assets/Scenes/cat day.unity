@@ -2856,7 +2856,7 @@ MonoBehaviour:
   - Find your home and leave this world! See yourselves for what you are!
   answers:
   - {fileID: 106056772}
-  speed: 0
+  speed: 0.05
   button: {fileID: 50461831}
   scene1: loading screen 2
   scene2: 

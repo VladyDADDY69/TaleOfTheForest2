@@ -1940,8 +1940,8 @@ MonoBehaviour:
     coll;     private SpriteRend ..."'
   - '"... ixedUpdate()     {          if (KBCounter <= 0)         {             rb.velocity
     = new Vector2(dirx, rb.velocity.y);         }         else         {            
-    if (KnockFromRight == true)             {                 rb.velocity = new Vector2(-KBForce,
-    KBForce);             }             if (KnockFromRight ..."'
+    if (KnockFromRight == true)             {                 rb.velocity = new Vector2
+    ...."'
   - You might wander what it is, but if you continue looking at it...
   - You slowly realize...
   - It's your very script! Congratulations, you finally found out the truth!
@@ -1951,7 +1951,7 @@ MonoBehaviour:
   answers:
   - {fileID: 1999787968}
   - {fileID: 488161006}
-  speed: 0
+  speed: 0.05
   button: {fileID: 73913990}
   scene1: Level1
   scene2: start screen

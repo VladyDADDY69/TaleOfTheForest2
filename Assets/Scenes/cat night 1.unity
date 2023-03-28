@@ -2723,7 +2723,7 @@ MonoBehaviour:
     of your surroundings!
   answers:
   - {fileID: 363272020}
-  speed: 0
+  speed: 0.05
   button: {fileID: 1000480404}
   scene1: loading screen 4
   scene2: 

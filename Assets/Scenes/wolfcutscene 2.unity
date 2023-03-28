@@ -2666,7 +2666,7 @@ MonoBehaviour:
   - Worthy fighters, I place my trust in your power! Save our forest from this darkness!
   answers:
   - {fileID: 2065102438}
-  speed: 0
+  speed: 0.05
   button: {fileID: 1164342099}
   scene1: between owl and cat 2
   scene2: 

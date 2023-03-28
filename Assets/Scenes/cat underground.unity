@@ -1939,7 +1939,7 @@ MonoBehaviour:
   answers:
   - {fileID: 1999787968}
   - {fileID: 488161006}
-  speed: 0
+  speed: 0.05
   button: {fileID: 73913990}
   scene1: Level1
   scene2: start screen

@@ -2586,7 +2586,7 @@ MonoBehaviour:
   - Your true concern lies elsewhere, do not lose your way seeking in the dark!
   answers:
   - {fileID: 529949809}
-  speed: 0
+  speed: 0.05
   button: {fileID: 403946794}
   scene1: loading screen 3
   scene2: 

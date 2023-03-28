@@ -2667,7 +2667,7 @@ MonoBehaviour:
     one who's hiding!
   answers:
   - {fileID: 2061587832}
-  speed: 0
+  speed: 0.05
   button: {fileID: 1331695675}
   scene1: cartic cutscene 1
   scene2: 
