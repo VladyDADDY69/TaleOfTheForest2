@@ -2716,6 +2716,8 @@ MonoBehaviour:
   - {fileID: 1657795529}
   speed: 0.06
   button: {fileID: 126031589}
+  scene1: cat night
+  scene2: cat night
 --- !u!1 &1649720084
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,8 @@ public class DialogueScript : MonoBehaviour
     private int index = 0;
     public float speed;
     public GameObject button;
-    private int nextSceneToLoad;
+    public string scene1;
+    public string scene2;
 
     void Start()
     {
@@ -68,8 +69,8 @@ public class DialogueScript : MonoBehaviour
             answers[i].SetActive(false);
         }
 
-        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
-        SceneManager.LoadScene(nextSceneToLoad);
+        
+        SceneManager.LoadScene(scene1);
 
 
 
@@ -82,7 +83,7 @@ public class DialogueScript : MonoBehaviour
         {
             answers[i].SetActive(false);
         }
-        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 2;
-        SceneManager.LoadScene(nextSceneToLoad);
+        
+        SceneManager.LoadScene(scene2);
     }
 }
