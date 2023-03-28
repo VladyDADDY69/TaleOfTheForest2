@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
     public int maxHealth = 10;
     public int currentHealth;
     public Slider HealthBar;
+    public string scene;
     void Start()
     {
         HealthBar.value = currentHealth;
@@ -25,6 +27,8 @@ public class BossHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(scene);
+
         }
     }
 }

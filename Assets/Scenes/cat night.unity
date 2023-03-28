@@ -2340,10 +2340,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1993701487}
   dialogueText: {fileID: 1675336841}
   dialogue1:
-  - Creations from afar, find the truth in thee unknown, see beyound our forged world!
+  - Creations from afar, find the truth in the unknown, see beyond our forged world!
   answers:
   - {fileID: 665078974}
-  - {fileID: 1164953106}
   speed: 0.06
   button: {fileID: 1599941491}
   scene1: loading screen

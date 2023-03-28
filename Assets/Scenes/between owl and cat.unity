@@ -217,7 +217,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: cat night
+          m_StringArgument: cat sunrise
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &370048570
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e26dc767fe6cea41b80602484f7fc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: cat night
+  scene: cat sunrise
 --- !u!1 &764001845
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,8 +490,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "\tAfter some time walking through the forest...\n\ta shadowy figure merges
-    from the dark..."
+  m_Text: "\tSome time passes and from the deepness of the forest \nthe shadowy figure
+    emerges again..."
 --- !u!222 &1135586420
 CanvasRenderer:
   m_ObjectHideFlags: 0

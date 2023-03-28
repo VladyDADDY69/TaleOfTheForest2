@@ -2611,7 +2611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mia: Thank you for your help!'
+  m_text: "Kai: We will save the forest!\n Don't worry"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba95ab51727b72b41bd36f45661218a8, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2716,11 +2716,10 @@ MonoBehaviour:
     the one who follows!
   answers:
   - {fileID: 1220719921}
-  - {fileID: 950340135}
   speed: 0.06
   button: {fileID: 1205248752}
-  scene1: between owl and cat
-  scene2: between owl and cat
+  scene1: between owl and cat 1
+  scene2: between owl and cat 1
 --- !u!1 &1649720084
 GameObject:
   m_ObjectHideFlags: 0

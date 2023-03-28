@@ -1274,6 +1274,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   HealthBar: {fileID: 931467771}
+  scene: wolfcutscene 2
 --- !u!114 &2025243064
 MonoBehaviour:
   m_ObjectHideFlags: 0

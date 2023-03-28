@@ -35,9 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cat sunrise.unity
     guid: 8b12baf92ad11ce4ab229ab7099ad7fc
-  - enabled: 1
-    path: Assets/Scenes/loading screen 1.unity
-    guid: 7954c33ba3ab4414a809bdf8a34ba0e7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: f10237b499ade16478f1ecb6807ab0cb
@@ -53,15 +53,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/wolfcutscene 2.unity
     guid: 91474159b12470040bae667dbe45d434
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/wolfcutscene 3.unity
     guid: 397dbd62536470941a1caec3c961c890
   - enabled: 1
     path: Assets/Scenes/cat day.unity
     guid: 1b9f1e9bba970f2459e580326872c63d
-  - enabled: 1
-    path: Assets/Scenes/loading screen 2.unity
-    guid: 51f46cb006de01942996d7de92e358d1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 505321c095260c74db90a3f910e4c46c
@@ -74,9 +74,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cat sunset.unity
     guid: cc7d5dd54f13cdd48bcb759d1d7a9ec4
-  - enabled: 1
-    path: Assets/Scenes/loading screen 3.unity
-    guid: ed1bc4553fdd29740840c2b174230c6a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level5.unity
     guid: a025974c81b48cb459d822c29e4d9deb
@@ -86,9 +86,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cat night 1.unity
     guid: 11a7a8a23b1f71040a3dd7520f0c5af8
-  - enabled: 1
-    path: Assets/Scenes/loading screen 4.unity
-    guid: f13aae4eb55703344b6c1bbca2a4af6f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: a0ac033dfcee57f479000d100e7eb159
@@ -116,4 +116,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/between owl and cat.unity
     guid: 822f9ead721daa640b350e50b16bfe4f
+  - enabled: 1
+    path: Assets/Scenes/loading screen 1.unity
+    guid: b7d64a4ec739f054fac1244392b5745d
+  - enabled: 1
+    path: Assets/Scenes/loading screen 2.unity
+    guid: 42b480833e87c97409c6e778144525dc
+  - enabled: 1
+    path: Assets/Scenes/loading screen 3.unity
+    guid: 4264a6514b0b8764987ed5f0abcf8fb6
+  - enabled: 1
+    path: Assets/Scenes/loading screen 4.unity
+    guid: d47db3e0cd2291942a574d1e08e442c7
+  - enabled: 1
+    path: Assets/Scenes/between owl and cat 2.unity
+    guid: 954f3c47ba6ea7e4bbe32050be027e7c
+  - enabled: 1
+    path: Assets/Scenes/between owl and cat 1.unity
+    guid: 44c38f443fcc8b84f90a1997a285b26b
   m_configObjects: {}
