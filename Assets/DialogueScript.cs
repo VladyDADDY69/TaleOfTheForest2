@@ -54,7 +54,7 @@ public class DialogueScript : MonoBehaviour
         }
         else
         {
-            button.SetActive(false);
+            
             for (int i = 0; i < answers.Length; i++)
             {
                 answers[i].SetActive(true);
@@ -69,7 +69,7 @@ public class DialogueScript : MonoBehaviour
             answers[i].SetActive(false);
         }
 
-        
+        button.SetActive(false);
         SceneManager.LoadScene(scene1);
 
 
@@ -83,7 +83,7 @@ public class DialogueScript : MonoBehaviour
         {
             answers[i].SetActive(false);
         }
-        
+        button.SetActive(false);
         SceneManager.LoadScene(scene2);
     }
 }

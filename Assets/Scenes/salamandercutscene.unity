@@ -730,7 +730,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba95ab51727b72b41bd36f45661218a8, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_margin: {x: -297.31915, y: 117.7095, z: 104.552246, w: 110.36087}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &267199078
@@ -2468,7 +2468,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1622763940}
-        m_TargetAssemblyTypeName: Dialogue1, Assembly-CSharp
+        m_TargetAssemblyTypeName: DialogueScript, Assembly-CSharp
         m_MethodName: Option1
         m_Mode: 1
         m_Arguments:
@@ -2704,22 +2704,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1622763937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a04c73601768b46bd52950bb3b8c55, type: 3}
+  m_Script: {fileID: 11500000, guid: 207b096ec55096941bcfed651eb70f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 220177247}
   dialogueText: {fileID: 267199077}
   dialogue1:
-  - 'Mia: Hi my name is Mia!'
-  - 'Kai: Who are you?'
-  - 'Brown Owl: I am the Brown Owl.'
-  - 'Kai: Cool'
-  dialogue2:
-  - 'Kai: You suck!'
-  - 'Mia: Yeah!'
+  - 
   answers:
   - {fileID: 1476831110}
   - {fileID: 1657795529}
+  speed: 0
+  button: {fileID: 1187150975}
+  scene1: cat sunrise
+  scene2: cat sunrise
 --- !u!1 &1649720084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,7 +2949,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1622763940}
-        m_TargetAssemblyTypeName: Dialogue1, Assembly-CSharp
+        m_TargetAssemblyTypeName: DialogueScript, Assembly-CSharp
         m_MethodName: Option2
         m_Mode: 1
         m_Arguments:
