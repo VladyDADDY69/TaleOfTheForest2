@@ -2840,8 +2840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207b096ec55096941bcfed651eb70f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialoguePanel: {fileID: 611235738}
+  dialogueText: {fileID: 65517159}
   dialogue1:
   - Greetings friends! What brings you wandering these lands? Outsiders such as yourselves
     should be careful.
