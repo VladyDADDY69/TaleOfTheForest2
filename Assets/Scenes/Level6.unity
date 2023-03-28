@@ -5017,7 +5017,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 1911275735}
   - {fileID: 450980254}
-  moveSpeed: 4
+  moveSpeed: 1
   patrolDestination: 0
 --- !u!70 &1032064567
 CapsuleCollider2D:
