@@ -784,7 +784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start screen
+  m_text: End
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba95ab51727b72b41bd36f45661218a8, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1770,7 +1770,7 @@ MonoBehaviour:
   speed: 0.05
   button: {fileID: 73913990}
   scene1: Level1
-  scene2: start screen
+  scene2: end
 --- !u!1 &1647817021
 GameObject:
   m_ObjectHideFlags: 0

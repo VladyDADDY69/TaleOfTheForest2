@@ -161,4 +161,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/jurnal end.unity
     guid: 6167639dbcef94e41bf163eb6c2e91eb
+  - enabled: 1
+    path: Assets/Scenes/end.unity
+    guid: 4e733a375be3f5d4da5cace8db5acb93
   m_configObjects: {}
