@@ -6,3 +6,9 @@ Membrii echipei BOL:
 -Anea Vladimir Andrei
 -Ioana Sanduleanu Eugenia
 -Alexandru Dragos Ionescu
+
+Lista schimbari
+-	Muzica peste tot
+-	Reparat bug-ul care te bloca in plante
+-	Lungit lvls
+-	Updatat lvl design
