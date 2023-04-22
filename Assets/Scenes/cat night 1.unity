@@ -2574,7 +2574,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1559254986}
   dialogue1:
   - The truth is close but do not lose your way! Go into the deep and be mindful
-    of your surroundings!
+    of your surroundings! There is something waiting for you to find it.
   answers:
   - {fileID: 363272020}
   speed: 0.05
