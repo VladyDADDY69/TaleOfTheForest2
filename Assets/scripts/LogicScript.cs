@@ -8,7 +8,7 @@ public class LogicScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        tutorial.SetActive(false);
     }
 
     // Update is called once per frame
