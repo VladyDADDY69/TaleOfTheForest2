@@ -1544,7 +1544,7 @@ GameObject:
   - component: {fileID: 746563202}
   m_Layer: 0
   m_Name: trap day 4
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1562,7 +1562,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1658634}
+  m_Offset: {x: 0.12276888, y: -0.0992769}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1573,7 +1573,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.6682732}
+  m_Size: {x: 0.75446224, y: 0.51845354}
   m_EdgeRadius: 0
 --- !u!212 &746563203
 SpriteRenderer:
@@ -3222,7 +3222,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16407087, y: -0.24821016}
+  m_Offset: {x: 0.13240373, y: -0.19754323}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3233,7 +3233,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.67185825, y: 0.5035797}
+  m_Size: {x: 0.67185813, y: 0.5289131}
   m_EdgeRadius: 0
 --- !u!212 &1980657909
 SpriteRenderer:
